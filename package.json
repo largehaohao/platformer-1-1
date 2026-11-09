@@ -6,6 +6,8 @@
   "description": "World 1-1 recreation: hand-rolled fixed-timestep sim core, Canvas2D renderer.",
   "scripts": {
     "dev": "vite",
+    "generate:assets": "node tools/generate-tiles.ts",
+    "prebuild": "pnpm generate:assets",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
@@ -13,11 +15,14 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/node": "^26.6.6",
     "typescript": "^5.9.0",
     "vite": "^7.0.0",
     "vitest": "^3.0.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

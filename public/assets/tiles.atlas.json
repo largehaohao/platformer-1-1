@@ -1,0 +1,43 @@
+{
+  "image": "tiles.png",
+  "tileWidth": 16,
+  "tileHeight": 16,
+  "tiles": {
+    "brick": {
+      "x": 0,
+      "y": 0
+    },
+    "ground": {
+      "x": 16,
+      "y": 0
+    },
+    "hardBlock": {
+      "x": 32,
+      "y": 0
+    },
+    "pipeShaftLeft": {
+      "x": 48,
+      "y": 0
+    },
+    "pipeShaftRight": {
+      "x": 0,
+      "y": 16
+    },
+    "pipeTopLeft": {
+      "x": 16,
+      "y": 16
+    },
+    "pipeTopRight": {
+      "x": 32,
+      "y": 16
+    },
+    "questionBlock": {
+      "x": 48,
+      "y": 16
+    },
+    "questionBlockUsed": {
+      "x": 0,
+      "y": 32
+    }
+  }
+}

@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: { output: { inlineDynamicImports: true } },
   },
   test: {
-    include: ['src/**/*.test.ts'],
+    include: ['src/**/*.test.ts', 'tools/**/*.test.ts'],
     // The sim core must not need a DOM. Keeping the node environment means any accidental
     // `document` usage on a test path fails loudly instead of silently passing. See ADR-0001.
     environment: 'node',
